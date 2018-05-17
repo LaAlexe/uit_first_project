@@ -1,0 +1,146 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+@font-face {
+    font-family: 'kobzar_ksregular';
+    src: url('../web_site/fonts/kobzar/kobzarks_v1-020-webfont.eot');
+    src: url('../web_site/fonts/kobzar/kobzarks_v1-020-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../web_site/fonts/kobzar/kobzarks_v1-020-webfont.woff2') format('woff2'),
+         url('../web_site/fonts/kobzar/kobzarks_v1-020-webfont.woff') format('woff'),
+         url('../web_site/fonts/kobzar/kobzarks_v1-020-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+form {
+	padding: 50px;
+}
+
+input[type="checkbox"]{
+	display: none;
+}
+
+input[type="checkbox"]+label{
+	padding-left: 70px;
+	position: relative;
+	cursor: pointer;
+}
+
+input[type="checkbox"]+label:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 40px;
+	height: 15px;
+	border: 2px solid #171515;
+	border-radius: 50%;
+	background: #21e810;
+}
+
+input[type="checkbox"]+label:after{
+	content: "";
+	position: absolute;
+	left: 25px;
+	top: 3px;
+	width: 10px;
+	height: 10px;
+	border: 1px solid black;
+	background: #0c0c0b;
+	border-radius: 50%;
+	transition: 2s;
+}
+
+input[type="checkbox"]:checked+label:after{
+	left: 5px;
+}
+
+input[type="checkbox"]:checked+label::before{
+	background: #ea2c13;
+}
+
+input-placeholder {
+font-family: 'kobzar_ksregular';	
+font-size: 20px;
+}
+
+:-moz-placeholder {
+font-family: 'kobzar_ksregular';
+font-size: 18px;
+}
+
+textarea {
+	font-family: "Arial" cursive;
+	font-size: 15px;
+    border:3px solid yellow;
+
+}
+
+input::-webkit-inner-spin-button {  
+	-webkit-appearance: none;    
+	display: block;    
+	width: 10px;    
+	opacity: 1;  
+	}
+
+input[type='number'] {
+    background: url(../gallery/minus.png); 
+    -moz-appearance:textfield;
+    height:20px;
+    border: 1px solid blue; 
+    padding-left: 5px; /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/  
+    height: 20px; /*высота строки ввода*/   
+    width:140px;
+   
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none
+    display: block;    
+	width: 10px;    
+    opacity: 1;
+}
+
+input[type=range] {
+	-webkit-appearance: none;
+	border: 2px solid #d668e3;
+	width: 100px;
+	height: 10px;
+	outline: none;
+	border-radius:5px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	background: #430964;
+	height: 18px;
+	width: 18px;
+	border-radius: 20px;
+	cursor: pointer;
+}
+

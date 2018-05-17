@@ -1,0 +1,138 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+	background-color: pink; 
+}
+header{
+    height:300px;
+    background: url("../gallery/%D0%B7%D0%B0%D0%BB.jpg");
+    text-align: center;
+    font-size: 30px;
+}
+body>div {
+	width: 900px;
+	margin: 40px auto;
+	font-size: 20px;
+}
+h1,h2{
+	color: black;
+	text-align: center;
+	margin: 10px 0 0 0;
+    font-size: 50px;
+}
+    a {
+	color: darkred;
+}
+
+img {
+	width: 445px;
+	height: 300px;
+	border: 1px solid purple;
+}
+
+p {
+	    padding-bottom: 10px;
+}
+
+.menu {
+	
+	width: 100px;
+	padding: 0;
+	min-height: 146px;
+	position: fixed;
+	top: 50%;
+	margin-top: -73px;
+	border: 1px dashed #a57aa5;
+	right: 0;
+	background-color: #bf5990;
+	border-radius: 5%;
+	font-size: 16px;
+}
+.menu a {
+	text-decoration: none;
+	display: block;
+	padding: 10px 5px;
+}
+
+.menu a:hover {
+	color: #400d28;
+	background-color: hotpink;
+	font-size: 20px;
+}
+
+#dance>div,
+#stretching>div,
+#gym>div {
+	display: inline-block;
+	position: relative;
+}
+
+.dance_1:hover:before, .dance_2:hover:before,
+.stretching_1:hover:before, .stretching_2:hover:before,
+.gym_1:hover:before, .gym_2:hover:before
+ {
+	position: absolute;
+	background: rgba(208, 56, 231, 0.63);
+    width: 100%;
+    height: 50%;
+    top: 25%;
+    text-align: center;
+    color: #151115;
+    font-size: 40px;
+}
+
+.dance_1:hover:before, .dance_2:hover:before {
+	content: "dancing";
+}
+
+.stretching_1:hover:before, .stretching_2:hover:before {
+	content: "stretching¸";
+}
+
+.gym_1:hover:before, .gym_2:hover:before {
+	content: "gym";
+}
+

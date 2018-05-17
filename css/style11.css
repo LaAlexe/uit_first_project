@@ -1,0 +1,714 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../fonts/SegoeUI-Light.eot');
+	src: local('Segoe UI Light'), local('SegoeUI-Light'),
+		url('../fonts/SegoeUI-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SegoeUI-Light.woff') format('woff'),
+		url('../fonts/SegoeUI-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../fonts/SegoeUI-BoldItalic.eot');
+	src: local('../fonts/Segoe UI Bold Italic'), local('SegoeUI-BoldItalic'),
+		url('../fonts/SegoeUI-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SegoeUI-BoldItalic.woff') format('woff'),
+		url('../fonts/SegoeUI-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../fonts/SegoeUI-SemiBold.eot');
+	src: local('Segoe UI Semibold'), local('SegoeUI-SemiBold'),
+		url('../fonts/SegoeUI-SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SegoeUI-SemiBold.woff') format('woff'),
+		url('../fonts/SegoeUI-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../fonts/SegoeUI.eot');
+	src: local('Segoe UI'), local('SegoeUI'),
+		url('../fonts/SegoeUI.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SegoeUI.woff') format('woff'),
+		url('../fonts/SegoeUI.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../fonts/SegoeUI-Bold.eot');
+	src: local('Segoe UI Bold'), local('SegoeUI-Bold'),
+		url('../fonts/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SegoeUI-Bold.woff') format('woff'),
+		url('../fonts/SegoeUI-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../fonts/SegoeUI-Italic.eot');
+	src: local('Segoe UI Italic'), local('SegoeUI-Italic'),
+		url('../fonts/SegoeUI-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SegoeUI-Italic.woff') format('woff'),
+		url('../fonts/SegoeUI-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+/*@font-face {
+	font-family: 'SEGOEUIL';
+	src: url('../web_site/fonts/SEGOEUIL.eot');
+	src: local('SEGOEUIL'), url('../web_site/fonts/SEGOEUIL.woff') format('woff'), url('../web_site/fonts/SEGOEUIL.ttf') format('truetype');
+}
+.fontsforweb_fontid_1409 {
+	font-family: 'SEGOEUIL' !important;
+}
+	
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.wrapper{
+    margin:0 auto;
+    min-width:1000px;
+    max-width:1000px;
+    width: 1000px;
+    background: #fff;
+    color: #3b3b3b;
+    font-family: 'Open Sans Light';
+    font-weight:lighter;
+    font-size: 13px;
+}
+.div{
+	display:block;
+}
+a {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style: none;
+    list-style-image: none;
+}
+
+/*style.css:30
+a {
+    text-decoration: none;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: auto;}*/
+    
+.top_list{
+    margin-top:28px;
+    height: 82px;
+    position:relative;
+}
+.logo
+{
+	float: left;
+}
+.clear
+{
+	clear:both;
+}
+li{
+    text-align: -webkit-left;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style: none;
+    list-style-image: none;
+}
+a{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style: none;
+    list-style-image: none;
+}
+ul.menu{
+    list-style: none;
+    list-style-type: none;
+    list-style-image:none;
+    padding-left: 70px;
+    padding-top: 24px;
+    background: #fff;
+    margin-left: 400px;
+    height: 40px;
+}
+
+ul.menu li{
+    display: inline;
+    vertical-align: top;
+    padding-bottom: 20px;
+}
+
+ul.menu li a{
+    color: #666;
+    text-decoration: none;
+    background: #fff;
+    margin: 0;
+    padding: 1px 25px 0px 25px;
+}
+.main{
+background: url("../gallery/blue.png") no-repeat 0px 29px;
+}
+
+.main a:hover{
+color:#2d89ef;
+}
+
+.products{
+background: url("../gallery/purple.png") no-repeat 0px 29px;
+}
+.products:before{
+	content:"";
+	border: 6px solid #e2202000;
+	border-top: 6px solid #603cba;
+	top:53px;
+	position:absolute;
+	margin-left: 45px;
+}
+
+.products a:hover{
+color:#603cba;
+}
+
+.service{
+background: url("../gallery/green.png") no-repeat -5px 29px;
+}
+
+.service a:hover{
+color:#01a31c;
+}
+
+
+.about{
+background: url("../gallery/red.png") no-repeat -9px 29px;
+}
+
+.about a:hover{
+color: #d44a26;
+
+}
+
+.contacts{
+background: url("../gallery/orange.png") no-repeat -2px 29px;
+}
+
+.contacts a:hover{
+color:#f0a427;
+}
+input[type="search"]{
+    background: url("../gallery/search.png") no-repeat right 0px;
+    margin-top:26px;
+    color:grey;
+    width:229px;
+    height:39;
+    -webkit-appearance: none;
+}
+/*.block1{
+    min-height: 720px;
+}*/
+.price_button{
+    float:left;
+    margin: 10px 0 0 14px;
+    width:39px;
+    height:45px;
+    background: url("../gallery/price_sprite.png") no-repeat 0px 0px;
+    background-position: 0px 0px;
+}
+.download_price:hover{
+    cursor: pointer;
+}
+.txt{
+    color: white;
+    margin-top: 14px;
+    text-decoration: underline;
+}
+.title_page{
+    float: left;
+    color: #595756;
+    font-size: 32px;
+    font-family: 'SegoeUIRegular';
+    font-weight: normal;
+    line-height: 86px;
+    margin: 0 0 10px 0;
+}
+.left_side{
+   width: 486px;
+   float: left; 
+}
+.left_content{
+    margin-top: -33px;
+    background: #fff;
+    width: 100%;
+    float: left;
+}
+.b_d{
+    float:left;
+    margin:16px 0 0 16px;  
+    width:45px;
+    height:42px;
+    background: url(../gallery/sprite_maket.png); 
+}
+.b_d2{
+    float: left;
+    margin: 12px 0 0 16px;
+    font-family: 'SegoeUIRegular';
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+.text1, .text2, .text3, .text4{
+    font-family:'Open Sans Light';
+    font-size:12px;
+    margin:0;
+}
+
+.circle{
+    border: 3px solid white;
+	display: inline-block;
+	float: right;
+	text-align: center;
+	border-radius: 100%;
+	width: 27px;
+    height: 27px;
+    margin-top: 68px;
+    margin-bottom: 10px;
+    margin-right:10px;
+    position:relative;
+}
+.circle:before{
+	content:"";
+	left: 8px;
+    display: block;
+    position: absolute;
+    border-right: 3px solid white;
+    border-top: 3px solid white;
+    width:10px;
+    height: 12px;
+    margin-top:15px;
+    transform: translateY(-50%) rotate(45deg); 
+}
+.circle:after {
+	content: "";
+	position:absolute;
+	display:block;
+	width: 15px;
+	height: 3px;
+	background: white;
+	margin-top:13px;
+	margin-left:5px;
+}
+.circle:hover{
+	background:white;
+}
+.description{
+    float: left;
+    margin:12px 0 0 16px;
+    font-family: "SegoeUIRegular";
+    text-decoration: none;
+    font-size: 18px;
+}
+.button_description
+{
+    width: 100%;
+    height: 114px;
+    background: #603cba;
+    background-position: 98% 95%;
+    margin-top: 26px;
+
+}
+
+.button_description:hover{
+    cursor: pointer;
+}
+
+.button_description:hover .circle{
+	background:white;
+}
+.button_description:hover .circle:before{
+	border-color:#603cba;
+}
+.button_description:hover .circle:after{
+	background:#603cba;
+}
+
+.documents{
+    float: left;
+}
+.button_download{
+    width: 300px;
+    height: 70px;
+    background: #00a300;
+    margin-top: 26px;
+}
+.butt_down{
+    float:left;
+    margin:10px 0 0 16px;
+    width:39px;
+    height:45px;
+    background: url("../gallery/sprite_maket.png") no-repeat 0px 0px;
+    background-position: 0px -70px;
+}
+.butt_down2{
+    float: left;
+    margin: 12px 0 0 16px;
+    font-family: 'SegoeUIRegular';
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+.button_examples{
+    width: 300px;
+    background: #2b5797;
+    margin-top: 26px;
+    height: 70px;
+}
+.butt_ex{
+    float:left;
+    margin:16px 0 0 16px;
+    background: url("../gallery/sprite_maket.png");
+    width:43px;
+    height:43px;
+    background-position: 0px -140px;
+}
+.butt_ex2{
+    float: left;
+    margin: 12px 0 0 16px;
+    font-family: 'SegoeUIRegular';
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+.button_video{
+    margin-top: 26px;
+    margin-left: -158px;
+    height: 166px;
+    background: #ffc40d;
+}
+.button_video:hover .circle{
+	background:white;
+}
+.button_video:hover .circle:before{
+	border-color:#ffc40d;	
+}
+.button_video:hover .circle:after{
+	background-color:#ffc40d;
+}
+.butt_vid{
+	width:39px;
+	height:39px;
+    float: left;
+    margin: 16px 0 0 16px;
+    background: url("../gallery/sprite_maket.png") no-repeat;
+    background-position: 0px -210px;
+}
+.butt_vid2{
+    float: left;
+    margin: 12px 0 0 16px;
+    font-family: 'SegoeUIRegular';
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+.video{
+    float: right;
+}
+.right_side{
+    width: 486px;
+    float: right;
+    margin-left: 28px;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+.download_price{
+    width: 228px;
+    display: inline-block;
+    background: #0064cd;
+    height: 39px;
+    color: white;
+    position:  relative;
+    margin-top: 23px;
+}
+.search{
+	width: 229px;
+	display:inline-block;
+	margin-left: 28px;
+	position:  absolute;
+	margin-top: 3px;
+}
+#search {
+    width: 210px;
+    padding-left: 16px;
+    height: 35px;
+    border: 1px solid #cccccc;
+    color: #cccccc;
+    font-family: Arial;
+    font-size: 12px;
+    background: url(../gallery/search.png) no-repeat 97% 50% !important;
+}
+.product{
+    margin-top: 26px;
+    border: 2px solid #f1f1f1;;
+    height:305px;
+}
+h1{
+    margin-top: 30px;
+    font-size: 24px;
+    font-family: "SegoeUIRegular";
+    margin-bottom: 15px;
+}
+.block2>p{
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1;
+    margin-top: 0.5em; 
+    margin-bottom: 1em;
+}
+.block2{
+	width: 996px;
+	height: 229px;
+	color: #000000;
+	font-family: "SegoeUIRegular";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+}
+.b3{
+	background: linear-gradient( to right, #00a300 20px, white 20px);
+	width: 20px;
+	height: 134px;
+	display: inline-block;
+	margin-top: 15px;
+	position: relative;
+}
+.block3{
+    height: 132px;
+    border: 1px solid #cccccc;
+    /* margin-left: 20px; */
+    display: inline-block;
+    width: 974px;
+    margin-top: 15px;
+    position: absolute;
+}
+.block3>h1{
+    color:#00a300;
+    margin-left: 30px;
+    margin-top: 17px;
+}
+.block3>p, .block4>p, .block5>p
+{
+	font-family: "SegoeUIRegular";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	margin-left:30px;
+	text-align:left;
+}
+.block4{
+    height: 132px;
+    border: 1px solid #cccccc;
+    /* background: linear-gradient( to right, #ffc40d 20px, white 20px);*/
+    margin-top: 30px;
+    position: absolute;
+    display: inline-block;
+    width: 976px;
+}
+.b4 {
+	background: linear-gradient( to right, #ffc40d 20px, white 20px);
+	 margin-top: 30px;
+	 width: 20px;
+	 height: 134px;	
+	 display: inline-block;
+	 position: relative;
+}
+.block4>h1{
+    color:#ffc40d;
+    margin-left: 30px;
+    margin-top: 17px;
+}
+.block5{
+    height: 132px;
+    border: 1px solid #cccccc;
+    margin-top: 30px;
+    position: absolute;
+    display: inline-block;
+    width: 976px;    
+    }
+.b5{
+     background: linear-gradient( to right, #2d89ef 20px, white 20px);
+     margin-top: 30px;
+	 width: 20px;
+	 height: 134px;	
+	 display: inline-block;
+	 position: relative;
+}
+.block5>h1{
+    color:#2d89ef;
+    margin-left: 30px;
+    margin-top: 17px;
+}
+.feedback_form {
+    background: #f1f1f1;
+    position:relative;
+}
+.feedback_form_header{
+    background: #c3325f;
+    height: 74px;
+    margin-top: 36px;
+    color: #fff;
+    padding: 6px 0 0 65px;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'SegoeUIRegular';
+    position:relative;
+}
+.form_left{
+    float: left;
+    margin-bottom: 18px;
+    margin-left: 5px;
+    width: 310px;
+    display: block;
+    height:200px;
+    background: #f1f1f1;
+}
+.feedback_phone{
+    float: left;
+}
+select{
+	margin-top:20px;
+    width: 310px;
+    height: 31px;
+    visibility: visible;
+}
+.textarea_left {
+      height: 127px;
+      width: 636px;
+      float: left;
+      margin-top: 20px;
+      margin-left: 20px;
+}
+input{
+    height: 31px;
+    width: 306px;
+    margin-top: 20px;
+}
+p{
+    display: block;
+}
+input.button{
+    float: left;
+    margin-left: 0px;
+    background: #c3325f;
+    color: #fff;
+    border: none;
+    margin-top: 18px;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: "SegoeUIRegular";
+    cursor: pointer;
+    width: 120px;
+    height: 33px;
+}
+.footer {
+    background: #f1f1f1;
+    width: 984px;
+    height: 50px;
+    padding-left: 16px;
+    overflow: hidden;
+}
+.footer p {
+    margin-top: 18px;
+    font-family: "SegoeUIRegular";
+    font-size: 12px;
+}
+.footer_space {
+    height: 50px;
+}
+input[type='text'], textarea, select
+{
+    border: solid 1px #999;
+}
+
+input[type='text'].invalid, textarea.invalid, select.invalid
+{
+    border-color: #C3325F;
+}
+
+input[type='text'].inactive, textarea.inactive, select.inactive, option.inactive
+{
+    color: #999;
+}
+.feedback_form_header:before {
+	content:"";
+	border: 5px solid transparent;	
+	border-left: 5px solid #C3325F; 
+	border-top: 5px solid #C3325F;
+	bottom:-10px;
+	position:absolute;
+}
+.feedback_form_header>img{
+	z-index:1;
+	position:absolute;
+	padding-left:0;
+	margin-left:-44px;
+	margin-top:19px;
+}
+.back_message{
+    padding-top: 16px;
+}

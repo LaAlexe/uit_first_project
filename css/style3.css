@@ -1,0 +1,259 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+	box-sizing: border-box;
+}
+
+.wrapper {
+	width: 900px;
+	margin: 0 auto;
+}
+.block1>div.fixed {
+	border: 1px dashed #151313;
+	width: 300px;
+	padding: 25px 0;
+	float: left;
+	background-color: rgba(156, 39, 176, 0.88);
+}
+.clear{
+    clear: both;
+}
+.block2one {
+	width: 300px;
+	border: 1px dashed #0c0b0b;
+	float: left;
+}
+.block2two{
+	width: 599px;
+	border: 1px dashed #151313;
+	float: left;
+}
+.block2one>div {
+	padding: 25px 0;
+	border: 1px dashed #131111;
+	background-color: rgba(156, 39, 176, 0.74);
+}
+.block2top {
+	padding: 37px 0;
+	border: 1px dashed black;
+	background-color: rgba(156, 39, 176, 0.71);
+}
+.block2bottom>div.fixed {
+	float: left;
+	border: 1px dashed black;
+	padding: 39px 0;
+	width: 298px;
+	background-color: #b1608e;
+}
+.block3>div.fixed {
+	float: left;
+	border: 1px dashed black;
+	background-color: rgba(193, 97, 86, 0.58);
+}
+.block3>div {
+	width: 600px;
+}
+.block3>div+div {
+	width: 300px;
+}
+.block3right {
+
+	padding: 41px 0;
+}
+.block3left>div {
+	width: 600px;
+	border: 1px dashed black;
+	background-color: #dc5bc5;
+}
+
+.block3top {
+	padding: 19px 0;
+}
+
+.block3bottom>div.fixed {
+	float: left;
+	width: 299px;
+	background-color: #8a2d82;
+}
+
+.block3bottomleft {
+	padding: 19px 0;
+}
+
+.block3bottomright>div {
+	width: 299px;
+	border: 1px dashed black;
+	padding: 9px 0;
+	background-color: #c553cc;
+}
+
+.block4>div.fixed {
+	float: left;
+	border: 1px dashed black;
+	padding: 25px 0;
+	background-color: #794882;
+}
+
+.block4>div{
+	width: 600px;
+}
+
+.block4>div+div {
+    width: 300px;
+}
+
+.block5>div.fixed {
+	float: left;
+	border: 1px dashed black;
+	background-color: #a81aca;
+}
+
+.block5left{
+	width: 300px;
+	padding: 50px 0;
+}
+
+.block5right {
+	width: 598px;
+	
+}
+.block5bottom {
+    padding: 26px 0;
+    border: 1px dashed black;
+    background-color: #6d4464;
+}
+
+.block5topleft,
+.block5topright {
+	float: left;
+	border: 1px solid black;
+}
+
+.block5topright {
+    width: 298px;
+    padding: 22px 0;
+    border: 1px dashed black;
+    background-color: #6c2079;
+}
+
+.block5topleft>div {
+    width: 296px;
+    padding: 10px 0;
+    border: 1px dashed black;
+    background-color: #c168d6;
+}
+
+
+.block6>div.fixed {
+	padding: 25px 0;
+	width: 300px;
+	border: 1px dashed black;
+	float: left;
+	background-color: rgba(178, 30, 104, 0.59);
+}
+
+.block7>div.fixed {
+	float: left;
+	width: 300px;
+	border: 1px dashed black;
+}
+
+.block7left1 {
+	width: 149px;
+	padding: 15px 0;
+	border: 1px dashed black;
+	float: left;
+	background-color: #3a0535;
+}
+
+.block7left2 {
+	width: 298px;
+	padding: 16px 0;
+	border: 1px dashed black;
+	background-color: #7e4d84;
+}
+
+.block7middle>div {
+	border: 1px dashed black;
+	padding: 10px 0;
+	background-color: #80324e;
+}
+
+.block7righttop {
+	padding: 17px 0;
+	background-color: #d3e3b6;
+}
+
+.block7rightbottom>div.fixed {
+	float: left;
+	width: 149px;
+	border: 1px dashed black;
+	padding: 15px 0;
+	background-color: #9367bb;
+}
+.menu {
+	
+	width: 100px;
+	padding: 0;
+	min-height: 146px;
+	position: fixed;
+	top: 50%;
+	margin-top: -73px;
+	border: 1px dashed #a57aa5;
+	right: 0;
+	background-color: #bf5990;
+	border-radius: 5%;
+	font-size: 16px;
+}
+.menu a {
+	text-decoration: none;
+	display: block;
+	padding: 10px 5px;
+}
+
+.menu a:hover {
+	color: #400d28;
+	background-color: hotpink;
+	font-size: 20px;
+}
